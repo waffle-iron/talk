@@ -19,6 +19,14 @@ defmodule Talk.Router do
     get "/", PageController, :index
   end
 
+  scope "/auth", Talk do
+    pipe_through :browser
+
+    get "/signout", AuthController, :signout
+    get "/:provider", AuthController, :request
+    get "/:provider/callback", AuthController, :callback
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", Talk do
   #   pipe_through :api
