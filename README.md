@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/Aram-Anderson/talk.png?columns=all)](https://waffle.io/Aram-Anderson/talk?utm_source=badge)
 # Talk
 
 To start your Phoenix app:
